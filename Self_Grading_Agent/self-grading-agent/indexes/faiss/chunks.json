@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "KB-001-C001",
+    "document_id": "KB-001",
+    "document_name": "01_nexatech.md",
+    "document_type": "Company Profile",
+    "last_updated": "2026-02-15",
+    "content": "# NexaTech Solutions — Company Profile\nDocument ID: KB-001\nDocument Type: Company Profile\nLast Updated: 2026-02-15\n\nNexaTech Solutions is a fictional enterprise technology company founded in 2019 and headquartered in Bengaluru, India. It develops software for enterprise search, workflow automation, and data governance.\n\nLeadership:\n- Rohan Mehta — Chief Executive Officer, since January 2021.\n- Anika Rao — Chief Technology Officer, since July 2023.\n- Meera Iyer — Chief Operating Officer, since April 2024.\n\nPrimary products:\n- NovaSearch — enterprise knowledge search and question answering.\n- FlowPilot — workflow automation platform.\n- DataMesh Hub — data catalog and governance platform.\n\nMarkets: India and Singapore.\n\nNovaSearch launched in March 2025. FlowPilot launched in September 2024. DataMesh Hub launched in November 2023.\n\nNovaSearch Enterprise is listed at $49 per user per month with a 25-seat minimum. FlowPilot Business is listed at $79 per workspace per month and includes up to 20 active workflows. DataMesh Hub uses quote-based pricing.\n\nNexaTech's hosted production services use TLS 1.3 for data in transit and AES-256 for data at rest. Standard hosted deployments use infrastructure in Singapore and have a 99.9% monthly availability target.\n\nCustomer support is available Monday–Friday, 09:00–18:00 IST for standard support. Premium Support provides 24/7 incident response.\n\nImportant scope: These facts are for the fictional benchmark and should not be treated as real-world company information."
+  },
+  {
+    "chunk_id": "KB-002-C001",
+    "document_id": "KB-002",
+    "document_name": "02_orbitanalytics.md",
+    "document_type": "Company Profile",
+    "last_updated": "2026-02-15",
+    "content": "# Orbit Analytics — Company Profile\nDocument ID: KB-002\nDocument Type: Company Profile\nLast Updated: 2026-02-15\n\nOrbit Analytics is a fictional data analytics company founded in 2018 and headquartered in Hyderabad, India. It provides business intelligence, forecasting, and operational analytics software.\n\nLeadership:\n- Kavya Menon — Chief Executive Officer, since March 2022.\n- Arjun Shah — Chief Technology Officer, since September 2021.\n- Priya Nair — Chief Product Officer, since June 2024.\n\nPrimary products:\n- OrbitBI — business intelligence and dashboarding platform.\n- ForecastPro — demand forecasting platform.\n- InsightFlow — operational analytics product.\n\nMarkets: India, UAE, and Singapore.\n\nOrbitBI launched in April 2022. ForecastPro launched in August 2023. InsightFlow launched in January 2025.\n\nOrbitBI Professional is priced at $29 per user per month with a 10-seat minimum. ForecastPro is priced at $99 per forecasting workspace per month. InsightFlow pricing is quote-based.\n\nOrbit Analytics provides hosted services using TLS 1.3 in transit and AES-256 at rest. Its standard hosted deployment region is Mumbai, India, with a 99.95% monthly availability target.\n\nStandard customer support operates Monday–Friday, 08:00–17:00 IST. Priority customers receive extended incident support.\n\nImportant scope: These facts are for the fictional benchmark and should not be treated as real-world company information."
+  },
+  {
+    "chunk_id": "KB-003-C001",
+    "document_id": "KB-003",
+    "document_name": "03_zenithrobotics.md",
+    "document_type": "Company Profile",
+    "last_updated": "2026-02-15",
+    "content": "# Zenith Robotics — Company Profile\nDocument ID: KB-003\nDocument Type: Company Profile\nLast Updated: 2026-02-15\n\nZenith Robotics is a fictional industrial automation company founded in 2017 and headquartered in Pune, India. It develops robotic inspection, warehouse automation, and fleet-management software.\n\nLeadership:\n- Sameer Kulkarni — Chief Executive Officer, since February 2020.\n- Elena Thomas — Chief Technology Officer, since November 2022.\n- Vikram Joshi — Chief Operating Officer, since May 2023.\n\nPrimary products:\n- VisionInspect — AI-assisted visual inspection.\n- RoboFleet — robotic fleet management.\n- WarehousePilot — warehouse automation orchestration.\n\nMarkets: India, Germany, and Japan.\n\nVisionInspect launched in February 2021. RoboFleet launched in October 2022. WarehousePilot launched in July 2024.\n\nVisionInspect is priced at $149 per inspection station per month. RoboFleet is priced at $299 per robot per month. WarehousePilot uses annual enterprise contracts with quote-based pricing.\n\nHosted management services use TLS 1.3 for network encryption. Customer configuration data is encrypted at rest using AES-256. The standard hosted control plane is located in Frankfurt, Germany.\n\nStandard support is Monday–Friday, 09:00–18:00 IST. Enterprise customers receive 24/7 critical-incident escalation.\n\nImportant scope: These facts are for the fictional benchmark and should not be treated as real-world company information."
+  },
+  {
+    "chunk_id": "KB-004-C001",
+    "document_id": "KB-004",
+    "document_name": "04_clearpathhealth.md",
+    "document_type": "Company Profile",
+    "last_updated": "2026-02-15",
+    "content": "# ClearPath Health Systems — Company Profile\nDocument ID: KB-004\nDocument Type: Company Profile\nLast Updated: 2026-02-15\n\nClearPath Health Systems is a fictional healthcare software company founded in 2020 and headquartered in Chennai, India. It develops administrative and clinical workflow software for hospitals and clinics.\n\nLeadership:\n- Nikhil Varma — Chief Executive Officer, since August 2021.\n- Dr. Asha Kapoor — Chief Medical Technology Officer, since January 2023.\n- Rahul Bose — Chief Operating Officer, since October 2024.\n\nPrimary products:\n- CareFlow — clinical workflow coordination.\n- ClinicDesk — outpatient administration.\n- MedTrack — medication workflow management.\n\nMarkets: India and Malaysia.\n\nCareFlow launched in May 2022. ClinicDesk launched in March 2023. MedTrack launched in December 2024.\n\nCareFlow Enterprise is priced at $89 per clinical user per month. ClinicDesk is priced at $39 per staff user per month. MedTrack uses quote-based pricing.\n\nHosted services use TLS 1.3 in transit and AES-256 at rest. The standard hosted deployment region is Singapore. The standard availability target is 99.9% per month.\n\nStandard support operates Monday–Friday, 09:00–18:00 IST. Enterprise customers can purchase 24/7 critical-incident response.\n\nImportant scope: These facts are for the fictional benchmark and should not be treated as real-world company information."
+  },
+  {
+    "chunk_id": "KB-005-C001",
+    "document_id": "KB-005",
+    "document_name": "05_evergreenenergy.md",
+    "document_type": "Company Profile",
+    "last_updated": "2026-02-15",
+    "content": "# Evergreen Energy Systems — Company Profile\nDocument ID: KB-005\nDocument Type: Company Profile\nLast Updated: 2026-02-15\n\nEvergreen Energy Systems is a fictional clean-energy software company founded in 2016 and headquartered in Ahmedabad, India. It provides software for solar asset monitoring, energy forecasting, and maintenance operations.\n\nLeadership:\n- Dev Patel — Chief Executive Officer, since July 2019.\n- Neha Desai — Chief Technology Officer, since April 2021.\n- Manoj Rao — Chief Operating Officer, since January 2022.\n\nPrimary products:\n- SolarWatch — solar asset monitoring.\n- GridForecast — renewable-energy forecasting.\n- FieldOps — maintenance workflow management.\n\nMarkets: India, Australia, and UAE.\n\nSolarWatch launched in June 2020. GridForecast launched in September 2022. FieldOps launched in February 2024.\n\nSolarWatch is priced at $59 per monitored site per month. GridForecast is priced at $129 per forecasting workspace per month. FieldOps is quote-based.\n\nHosted services use TLS 1.3 in transit and AES-256 at rest. The standard hosted deployment region is Mumbai, India, with a 99.9% monthly availability target.\n\nStandard support is Monday–Friday, 09:00–18:00 IST. Premium customers receive 24/7 critical-incident escalation.\n\nImportant scope: These facts are for the fictional benchmark and should not be treated as real-world company information."
+  },
+  {
+    "chunk_id": "KB-006-C001",
+    "document_id": "KB-006",
+    "document_name": "06_helixfintech.md",
+    "document_type": "Company Profile",
+    "last_updated": "2026-02-15",
+    "content": "# Helix FinTech — Company Profile\nDocument ID: KB-006\nDocument Type: Company Profile\nLast Updated: 2026-02-15\n\nHelix FinTech is a fictional financial technology company founded in 2021 and headquartered in Mumbai, India. It develops software for payment operations, reconciliation, and financial risk monitoring.\n\nLeadership:\n- Aditya Rao — Chief Executive Officer, since November 2021.\n- Sara Fernandes — Chief Technology Officer, since February 2022.\n- Ishan Gupta — Chief Risk Officer, since September 2023.\n\nPrimary products:\n- PayOps — payment operations management.\n- ReconX — financial reconciliation platform.\n- RiskLens — transaction risk monitoring.\n\nMarkets: India, Singapore, and UAE.\n\nPayOps launched in January 2023. ReconX launched in June 2023. RiskLens launched in October 2024.\n\nPayOps is priced at $0.015 per processed transaction plus a platform fee. ReconX is priced at $79 per reconciliation workspace per month. RiskLens is quote-based.\n\nHosted services use TLS 1.3 in transit and AES-256 at rest. The standard hosted deployment region is Singapore, with a 99.95% monthly availability target.\n\nStandard support operates Monday–Friday, 09:00–18:00 IST. Enterprise customers receive 24/7 critical-incident response.\n\nImportant scope: These facts are for the fictional benchmark and should not be treated as real-world company information."
+  },
+  {
+    "chunk_id": "KB-007-C001",
+    "document_id": "KB-007",
+    "document_name": "07_product_catalog.md",
+    "document_type": "Product Catalog",
+    "last_updated": "2026-02-15",
+    "content": "# Multi-Company Product Catalog\nDocument ID: KB-007\nDocument Type: Product Catalog\nLast Updated: 2026-02-15\n\nThis document consolidates product names and primary functions across the benchmark companies.\n\nNexaTech Solutions:\n- NovaSearch — enterprise knowledge search and question answering.\n- FlowPilot — workflow automation.\n- DataMesh Hub — data catalog and governance.\n\nOrbit Analytics:\n- OrbitBI — business intelligence and dashboards.\n- ForecastPro — demand forecasting.\n- InsightFlow — operational analytics.\n\nZenith Robotics:\n- VisionInspect — AI-assisted visual inspection.\n- RoboFleet — robotic fleet management.\n- WarehousePilot — warehouse automation orchestration.\n\nClearPath Health Systems:\n- CareFlow — clinical workflow coordination.\n- ClinicDesk — outpatient administration.\n- MedTrack — medication workflow management.\n\nEvergreen Energy Systems:\n- SolarWatch — solar asset monitoring.\n- GridForecast — renewable-energy forecasting.\n- FieldOps — maintenance workflow management.\n\nHelix FinTech:\n- PayOps — payment operations management.\n- ReconX — financial reconciliation.\n- RiskLens — transaction risk monitoring.\n\nImportant: Product names that look similar must not be treated as interchangeable. A product belongs only to the company listed above."
+  },
+  {
+    "chunk_id": "KB-008-C001",
+    "document_id": "KB-008",
+    "document_name": "08_pricing_matrix.md",
+    "document_type": "Pricing Reference",
+    "last_updated": "2026-02-15",
+    "content": "# Multi-Company Pricing Matrix\nDocument ID: KB-008\nDocument Type: Pricing Reference\nLast Updated: 2026-02-15\n\nNexaTech:\n- NovaSearch Enterprise: $49/user/month; minimum 25 seats.\n- FlowPilot Business: $79/workspace/month.\n- DataMesh Hub: quote-based.\n\nOrbit Analytics:\n- OrbitBI Professional: $29/user/month; minimum 10 seats.\n- ForecastPro: $99/forecasting workspace/month.\n- InsightFlow: quote-based.\n\nZenith Robotics:\n- VisionInspect: $149/inspection station/month.\n- RoboFleet: $299/robot/month.\n- WarehousePilot: quote-based annual enterprise contract.\n\nClearPath Health Systems:\n- CareFlow Enterprise: $89/clinical user/month.\n- ClinicDesk: $39/staff user/month.\n- MedTrack: quote-based.\n\nEvergreen Energy Systems:\n- SolarWatch: $59/monitored site/month.\n- GridForecast: $129/forecasting workspace/month.\n- FieldOps: quote-based.\n\nHelix FinTech:\n- PayOps: $0.015/processed transaction plus platform fee.\n- ReconX: $79/reconciliation workspace/month.\n- RiskLens: quote-based.\n\nPricing is benchmark list pricing. Taxes, discounts, implementation charges, and negotiated contracts are excluded unless a document explicitly states otherwise.\n\nCritical distinction: pricing units differ across companies and products. Do not convert one product's pricing model into another product's pricing model."
+  },
+  {
+    "chunk_id": "KB-009-C001",
+    "document_id": "KB-009",
+    "document_name": "09_release_history.md",
+    "document_type": "Release History",
+    "last_updated": "2026-02-15",
+    "content": "# Multi-Company Product Release History\nDocument ID: KB-009\nDocument Type: Release History\nLast Updated: 2026-02-15\n\nNexaTech:\n- NovaSearch: launch March 2025; SAML 2.0 support June 2025; access controls October 2025.\n- FlowPilot: launch September 2024; scheduled triggers February 2025.\n- DataMesh Hub: launch November 2023; lineage visualization December 2025.\n\nOrbit Analytics:\n- OrbitBI: launch April 2022; natural-language dashboards November 2024.\n- ForecastPro: launch August 2023; scenario comparison March 2025.\n- InsightFlow: launch January 2025; anomaly alerts July 2025.\n\nZenith Robotics:\n- VisionInspect: launch February 2021; defect-classification update May 2024.\n- RoboFleet: launch October 2022; route optimization January 2025.\n- WarehousePilot: launch July 2024; multi-site orchestration February 2026.\n\nClearPath Health Systems:\n- CareFlow: launch May 2022; care-team notifications August 2024.\n- ClinicDesk: launch March 2023; appointment analytics January 2025.\n- MedTrack: launch December 2024; inventory alerts September 2025.\n\nEvergreen Energy Systems:\n- SolarWatch: launch June 2020; predictive maintenance alerts April 2024.\n- GridForecast: launch September 2022; weather-adjusted forecasting October 2025.\n- FieldOps: launch February 2024; mobile work orders June 2025.\n\nHelix FinTech:\n- PayOps: launch January 2023; payment-routing rules September 2024.\n- ReconX: launch June 2023; automated exception matching February 2025.\n- RiskLens: launch October 2024; configurable risk policies November 2025.\n\nImportant: A product launch date is different from the date a later feature was released."
+  },
+  {
+    "chunk_id": "KB-010-C001",
+    "document_id": "KB-010",
+    "document_name": "10_security_infrastructure.md",
+    "document_type": "Security and Infrastructure",
+    "last_updated": "2026-02-15",
+    "content": "# Multi-Company Security and Infrastructure Reference\nDocument ID: KB-010\nDocument Type: Security and Infrastructure\nLast Updated: 2026-02-15\n\nNexaTech:\n- TLS 1.3 in transit; AES-256 at rest.\n- Standard hosted region: Singapore.\n- Availability target: 99.9% monthly.\n\nOrbit Analytics:\n- TLS 1.3 in transit; AES-256 at rest.\n- Standard hosted region: Mumbai, India.\n- Availability target: 99.95% monthly.\n\nZenith Robotics:\n- TLS 1.3 in transit; AES-256 at rest for customer configuration data.\n- Standard hosted control plane: Frankfurt, Germany.\n- Availability target is not specified in this document.\n\nClearPath Health Systems:\n- TLS 1.3 in transit; AES-256 at rest.\n- Standard hosted region: Singapore.\n- Availability target: 99.9% monthly.\n\nEvergreen Energy Systems:\n- TLS 1.3 in transit; AES-256 at rest.\n- Standard hosted region: Mumbai, India.\n- Availability target: 99.9% monthly.\n\nHelix FinTech:\n- TLS 1.3 in transit; AES-256 at rest.\n- Standard hosted region: Singapore.\n- Availability target: 99.95% monthly.\n\nScope matters: a company sales market is not necessarily its hosted deployment region. Do not infer an availability target when the document does not provide one."
+  },
+  {
+    "chunk_id": "KB-011-C001",
+    "document_id": "KB-011",
+    "document_name": "11_support_policies.md",
+    "document_type": "Customer Support",
+    "last_updated": "2026-02-15",
+    "content": "# Multi-Company Support Reference\nDocument ID: KB-011\nDocument Type: Customer Support\nLast Updated: 2026-02-15\n\nNexaTech:\n- Standard support: Monday–Friday, 09:00–18:00 IST.\n- Premium Support: 24/7 incident response.\n\nOrbit Analytics:\n- Standard support: Monday–Friday, 08:00–17:00 IST.\n- Priority customers receive extended incident support; exact hours are not specified.\n\nZenith Robotics:\n- Standard support: Monday–Friday, 09:00–18:00 IST.\n- Enterprise customers: 24/7 critical-incident escalation.\n\nClearPath Health Systems:\n- Standard support: Monday–Friday, 09:00–18:00 IST.\n- Enterprise customers may purchase 24/7 critical-incident response.\n\nEvergreen Energy Systems:\n- Standard support: Monday–Friday, 09:00–18:00 IST.\n- Premium customers: 24/7 critical-incident escalation.\n\nHelix FinTech:\n- Standard support: Monday–Friday, 09:00–18:00 IST.\n- Enterprise customers: 24/7 critical-incident response.\n\nImportant: 24/7 critical-incident response does not mean that standard support is available 24/7."
+  },
+  {
+    "chunk_id": "KB-012-C001",
+    "document_id": "KB-012",
+    "document_name": "12_company_comparison_facts.md",
+    "document_type": "Cross-Company Reference",
+    "last_updated": "2026-02-15",
+    "content": "# Cross-Company Facts for Evaluation\nDocument ID: KB-012\nDocument Type: Cross-Company Reference\nLast Updated: 2026-02-15\n\nThis document contains selected facts useful for cross-company questions.\n\nHeadquarters:\n- NexaTech Solutions — Bengaluru\n- Orbit Analytics — Hyderabad\n- Zenith Robotics — Pune\n- ClearPath Health Systems — Chennai\n- Evergreen Energy Systems — Ahmedabad\n- Helix FinTech — Mumbai\n\nFounding years:\n- NexaTech Solutions — 2019\n- Orbit Analytics — 2018\n- Zenith Robotics — 2017\n- ClearPath Health Systems — 2020\n- Evergreen Energy Systems — 2016\n- Helix FinTech — 2021\n\nStandard hosted regions:\n- NexaTech Solutions — Singapore\n- Orbit Analytics — Mumbai, India\n- Zenith Robotics — Frankfurt, Germany\n- ClearPath Health Systems — Singapore\n- Evergreen Energy Systems — Mumbai, India\n- Helix FinTech — Singapore\n\nHighest stated standard availability targets:\n- NexaTech Solutions — 99.9%\n- Orbit Analytics — 99.95%\n- ClearPath Health Systems — 99.9%\n- Evergreen Energy Systems — 99.9%\n- Helix FinTech — 99.95%\n- Zenith Robotics — not specified\n\nImportant: \"not specified\" is intentional. The absence of a value must not be converted into a guessed value."
+  }
+]

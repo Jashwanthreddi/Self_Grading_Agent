@@ -1,0 +1,21 @@
+[
+  {
+    "id": "Q001",
+    "category": "answerable",
+    "question": "When was NovaSearch launched?",
+    "reference_answer": "NovaSearch launched in March 2025.",
+    "expected_confidence": "High confidence",
+    "required_keywords": [
+      "NovaSearch",
+      "March 2025"
+    ]
+  },
+  {
+    "id": "Q011",
+    "category": "unanswerable",
+    "question": "What was NexaTech Solutions' total revenue in 2026?",
+    "reference_answer": "The documents do not contain NexaTech Solutions' total revenue for 2026.",
+    "expected_confidence": "I don't know",
+    "required_keywords": []
+  }
+]
