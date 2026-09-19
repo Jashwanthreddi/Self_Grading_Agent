@@ -1,0 +1,392 @@
+[
+  {
+    "id": "Q001",
+    "category": "answerable",
+    "question": "When was NovaSearch launched?",
+    "reference_answer": "NovaSearch launched in March 2025.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-001",
+      "KB-003",
+      "KB-009"
+    ],
+    "reason": "The launch date is explicitly stated in the knowledge base.",
+    "required_keywords": [
+      "NovaSearch",
+      "March 2025"
+    ]
+  },
+  {
+    "id": "Q002",
+    "category": "answerable",
+    "question": "Who is the CTO of Orbit Analytics?",
+    "reference_answer": "Arjun Shah is the CTO of Orbit Analytics.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-002"
+    ],
+    "reason": "The company profile explicitly identifies Arjun Shah as CTO.",
+    "required_keywords": [
+      "Arjun Shah"
+    ]
+  },
+  {
+    "id": "Q003",
+    "category": "answerable",
+    "question": "What is the standard hosted region for Zenith Robotics?",
+    "reference_answer": "Frankfurt, Germany.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-003",
+      "KB-010"
+    ],
+    "reason": "The infrastructure information explicitly states Frankfurt, Germany.",
+    "required_keywords": [
+      "Frankfurt"
+    ]
+  },
+  {
+    "id": "Q004",
+    "category": "answerable",
+    "question": "How much does OrbitBI Professional cost per user per month?",
+    "reference_answer": "$29 per user per month, with a 10-seat minimum.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-008",
+      "KB-002"
+    ],
+    "reason": "The pricing reference explicitly provides the price and minimum seats.",
+    "required_keywords": [
+      "$29",
+      "user",
+      "month"
+    ]
+  },
+  {
+    "id": "Q005",
+    "category": "answerable",
+    "question": "Which product of Evergreen Energy Systems is used for solar asset monitoring?",
+    "reference_answer": "SolarWatch.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-005",
+      "KB-007"
+    ],
+    "reason": "The product catalog explicitly maps SolarWatch to solar asset monitoring.",
+    "required_keywords": [
+      "solar",
+      "asset",
+      "monitoring"
+    ]
+  },
+  {
+    "id": "Q006",
+    "category": "answerable",
+    "question": "What is the standard monthly availability target for Helix FinTech?",
+    "reference_answer": "99.95%.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-006",
+      "KB-010",
+      "KB-012"
+    ],
+    "reason": "The availability target is explicitly stated.",
+    "required_keywords": [
+      "99.95%"
+    ]
+  },
+  {
+    "id": "Q007",
+    "category": "answerable",
+    "question": "Who is the CEO of ClearPath Health Systems?",
+    "reference_answer": "Nikhil Varma.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-004"
+    ],
+    "reason": "The leadership section explicitly identifies Nikhil Varma as CEO.",
+    "required_keywords": [
+      "CEO"
+    ]
+  },
+  {
+    "id": "Q008",
+    "category": "answerable",
+    "question": "What encryption algorithm is used for data at rest by NexaTech's hosted services?",
+    "reference_answer": "AES-256.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-001",
+      "KB-005",
+      "KB-010"
+    ],
+    "reason": "The security information explicitly states AES-256 for data at rest.",
+    "required_keywords": [
+      "AES-256"
+    ]
+  },
+  {
+    "id": "Q009",
+    "category": "answerable",
+    "question": "When did RiskLens launch?",
+    "reference_answer": "RiskLens launched in October 2024.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-006",
+      "KB-009"
+    ],
+    "reason": "The release history explicitly states the launch month and year.",
+    "required_keywords": [
+      "RiskLens"
+    ]
+  },
+  {
+    "id": "Q010",
+    "category": "answerable",
+    "question": "What is the minimum number of seats for NovaSearch Enterprise?",
+    "reference_answer": "25 seats.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-001",
+      "KB-004",
+      "KB-008"
+    ],
+    "reason": "The pricing information explicitly states a 25-seat minimum.",
+    "required_keywords": [
+      "25",
+      "seats"
+    ]
+  },
+  {
+    "id": "Q011",
+    "category": "unanswerable",
+    "question": "What was NexaTech Solutions' total revenue in 2026?",
+    "reference_answer": "I don't know. The knowledge base does not provide NexaTech's 2026 revenue.",
+    "expected_confidence": "I don't know",
+    "source_documents": [
+      "KB-001",
+      "KB-012"
+    ],
+    "reason": "No document contains a 2026 revenue figure for NexaTech.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q012",
+    "category": "unanswerable",
+    "question": "How many employees does Zenith Robotics currently have?",
+    "reference_answer": "I don't know. The knowledge base does not state Zenith Robotics' employee count.",
+    "expected_confidence": "I don't know",
+    "source_documents": [
+      "KB-003",
+      "KB-012"
+    ],
+    "reason": "Employee count is not provided.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q013",
+    "category": "unanswerable",
+    "question": "Which programming language is used to build NovaSearch?",
+    "reference_answer": "I don't know. The knowledge base does not specify the programming language used to build NovaSearch.",
+    "expected_confidence": "I don't know",
+    "source_documents": [
+      "KB-001",
+      "KB-003",
+      "KB-009"
+    ],
+    "reason": "The documents describe NovaSearch but do not state its implementation language.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q014",
+    "category": "unanswerable",
+    "question": "What is the exact annual contract value of WarehousePilot for a typical customer?",
+    "reference_answer": "I don't know. The knowledge base only says WarehousePilot uses quote-based annual enterprise contracts.",
+    "expected_confidence": "I don't know",
+    "source_documents": [
+      "KB-008"
+    ],
+    "reason": "No exact annual contract value is provided.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q015",
+    "category": "unanswerable",
+    "question": "What percentage of ClearPath Health Systems' customers are hospitals?",
+    "reference_answer": "I don't know. The knowledge base does not provide a customer percentage by organization type.",
+    "expected_confidence": "I don't know",
+    "source_documents": [
+      "KB-004",
+      "KB-012"
+    ],
+    "reason": "The required statistic is absent.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q016",
+    "category": "partially_supported_ambiguous",
+    "question": "Does NexaTech provide 24/7 customer support?",
+    "reference_answer": "NexaTech provides 24/7 incident response only through Premium Support; standard support is not 24/7.",
+    "expected_confidence": "Low confidence",
+    "source_documents": [
+      "KB-001",
+      "KB-007",
+      "KB-011"
+    ],
+    "reason": "The broad wording is ambiguous because 24/7 coverage is conditional on Premium Support.",
+    "required_keywords": [
+      "24/7",
+      "Premium"
+    ]
+  },
+  {
+    "id": "Q017",
+    "category": "partially_supported_ambiguous",
+    "question": "Does Orbit Analytics offer extended support to all customers?",
+    "reference_answer": "The documents say priority customers receive extended incident support, but they do not establish that all customers receive it.",
+    "expected_confidence": "Low confidence",
+    "source_documents": [
+      "KB-011"
+    ],
+    "reason": "The evidence supports extended support for priority customers only, not all customers.",
+    "required_keywords": [
+      "priority"
+    ]
+  },
+  {
+    "id": "Q018",
+    "category": "partially_supported_ambiguous",
+    "question": "Is Zenith Robotics' service availability target 99.9%?",
+    "reference_answer": "The knowledge base does not specify an availability target for Zenith Robotics, so it cannot establish that the target is 99.9%.",
+    "expected_confidence": "Low confidence",
+    "source_documents": [
+      "KB-010",
+      "KB-012"
+    ],
+    "reason": "The evidence explicitly marks the availability target as not specified; asserting 99.9% would be unsupported.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q019",
+    "category": "partially_supported_ambiguous",
+    "question": "Is Singapore the main market for NexaTech?",
+    "reference_answer": "Singapore is one of NexaTech's stated markets, but the documents do not identify a main or primary market.",
+    "expected_confidence": "Low confidence",
+    "source_documents": [
+      "KB-001",
+      "KB-012"
+    ],
+    "reason": "Singapore is supported as a market, but 'main market' is not supported.",
+    "required_keywords": [
+      "India",
+      "Singapore"
+    ]
+  },
+  {
+    "id": "Q020",
+    "category": "partially_supported_ambiguous",
+    "question": "Does ClearPath Health Systems guarantee 24/7 support for enterprise customers?",
+    "reference_answer": "The documents say enterprise customers can purchase 24/7 critical-incident response, but they do not describe it as a blanket guarantee of all support being available 24/7.",
+    "expected_confidence": "Low confidence",
+    "source_documents": [
+      "KB-004",
+      "KB-011"
+    ],
+    "reason": "The evidence is conditional and limited to critical incidents.",
+    "required_keywords": [
+      "enterprise",
+      "24/7"
+    ]
+  },
+  {
+    "id": "Q021",
+    "category": "trap",
+    "question": "When did NovaAnalytics launch?",
+    "reference_answer": "I don't know. The knowledge base contains NovaSearch, not a product named NovaAnalytics.",
+    "expected_confidence": "I don't know",
+    "source_documents": [
+      "KB-003",
+      "KB-007",
+      "KB-009"
+    ],
+    "reason": "NovaAnalytics is an altered entity name designed to resemble NovaSearch.",
+    "required_keywords": []
+  },
+  {
+    "id": "Q022",
+    "category": "trap",
+    "question": "When did OrbitBI launch: August 2023 or April 2022?",
+    "reference_answer": "April 2022. August 2023 is the launch date of ForecastPro, not OrbitBI.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-002",
+      "KB-009"
+    ],
+    "reason": "The question contains a tempting date from a different Orbit Analytics product.",
+    "required_keywords": [
+      "April 2022"
+    ],
+    "forbidden_facts": [
+      "August 2023"
+    ]
+  },
+  {
+    "id": "Q023",
+    "category": "trap",
+    "question": "Does NovaSearch cost $79 per workspace per month?",
+    "reference_answer": "No. NovaSearch Enterprise is $49 per user per month; $79 per workspace per month is the listed price for FlowPilot Business.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-004",
+      "KB-008"
+    ],
+    "reason": "The amount and pricing unit belong to a different NexaTech product.",
+    "required_keywords": [
+      "No",
+      "FlowPilot"
+    ],
+    "forbidden_facts": [
+      "NovaSearch costs $79",
+      "NovaSearch $79"
+    ]
+  },
+  {
+    "id": "Q024",
+    "category": "trap",
+    "question": "Is Frankfurt, Germany the standard hosted region for Evergreen Energy Systems?",
+    "reference_answer": "No. Evergreen Energy Systems' standard hosted region is Mumbai, India. Frankfurt, Germany is the standard hosted control-plane location for Zenith Robotics.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-005",
+      "KB-010"
+    ],
+    "reason": "The location is deliberately taken from another company.",
+    "required_keywords": [
+      "No",
+      "Mumbai"
+    ],
+    "forbidden_facts": [
+      "Frankfurt"
+    ]
+  },
+  {
+    "id": "Q025",
+    "category": "trap",
+    "question": "Did NovaSearch launch in June 2025?",
+    "reference_answer": "No. NovaSearch launched in March 2025. June 2025 is when SAML 2.0 support was added.",
+    "expected_confidence": "High confidence",
+    "source_documents": [
+      "KB-001",
+      "KB-009"
+    ],
+    "reason": "The trap swaps the product launch date with a later feature-release date.",
+    "required_keywords": [
+      "No",
+      "March 2025"
+    ],
+    "forbidden_facts": [
+      "NovaSearch launched in June 2025",
+      "NovaSearch launch in June 2025"
+    ]
+  }
+]
