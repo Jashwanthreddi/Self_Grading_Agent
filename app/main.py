@@ -19,7 +19,7 @@ from app.pipeline.agent import SelfGradingAgent
 # STREAMLIT CONFIGURATION
 # ---------------------------------------------------------------------
 st.set_page_config(
-    page_title="Self-Grading QA Agent",
+    page_title="Self Grading Agent",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -37,7 +37,7 @@ def build_agent() -> SelfGradingAgent:
 # SIDEBAR
 # ---------------------------------------------------------------------
 with st.sidebar:
-    st.header("🤖 Self-Grading Agent")
+    st.header("🤖 Self Grading Agent")
     st.caption("Calibrated Confidence & Answer Verification")
     
     st.markdown("---")
@@ -72,9 +72,6 @@ if "agent" not in st.session_state:
 if "result" not in st.session_state:
     st.session_state.result = None
 
-if "selected_question" not in st.session_state:
-    st.session_state.selected_question = ""
-
 # ---------------------------------------------------------------------
 # LOAD AGENT
 # ---------------------------------------------------------------------
@@ -102,45 +99,25 @@ tab_qa, tab_eval, tab_kb = st.tabs(
 # TAB 1: LIVE QA & VERIFICATION
 # =====================================================================
 with tab_qa:
-    st.title("🤖 Self-Grading Question Answering")
+    st.title("🤖 Self Grading Agent")
     st.markdown(
         "Ask a question against the company knowledge base. The agent generates a draft answer, "
         "independently verifies each atomic claim against retrieved evidence using a local NLI model, "
         "and assigns a calibrated confidence label."
     )
 
-    st.subheader("💡 Demo Quick-Select Presets")
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        if st.button("🟢 Answerable\n(NovaSearch Launch)", use_container_width=True):
-            st.session_state.selected_question = "When was NovaSearch launched?"
-
-    with col2:
-        if st.button("🔵 Unanswerable\n(2026 Revenue)", use_container_width=True):
-            st.session_state.selected_question = "What was NexaTech Solutions' total revenue in 2026?"
-
-    with col3:
-        if st.button("🟡 Ambiguous\n(24/7 Support)", use_container_width=True):
-            st.session_state.selected_question = "Does NexaTech provide 24/7 customer support?"
-
-    with col4:
-        if st.button("🔴 Trap Question\n(Swapped Price)", use_container_width=True):
-            st.session_state.selected_question = "Does NovaSearch cost $79 per workspace per month?"
-
     question_text = st.text_area(
         "Question",
-        value=st.session_state.selected_question,
-        placeholder="Enter your question here (or click one of the preset buttons above)...",
+        placeholder="Enter your question here...",
         height=100,
         key="qa_input",
     )
 
-    run_btn = st.button("🚀 Run Self-Grading Agent", type="primary", use_container_width=True)
+    run_btn = st.button("🚀 Run Self Grading Agent", type="primary", use_container_width=True)
 
     if run_btn:
         if not question_text.strip():
-            st.warning("Please enter or select a question first.")
+            st.warning("Please enter a question first.")
         else:
             try:
                 with st.spinner("Retrieving evidence, generating draft, and running NLI verification..."):

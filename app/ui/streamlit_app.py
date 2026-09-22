@@ -14,7 +14,7 @@ from app.main import build_agent
 
 
 st.set_page_config(
-    page_title="Self-Grading QA Agent",
+    page_title="Self Grading Agent",
     page_icon="🤖",
     layout="wide",
 )
@@ -247,7 +247,7 @@ def show_evaluation() -> None:
 def main() -> None:
 
     st.title(
-        "🤖 Self-Grading QA Agent"
+        "🤖 Self Grading Agent"
     )
 
     st.write(
