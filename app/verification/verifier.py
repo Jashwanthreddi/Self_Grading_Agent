@@ -489,23 +489,30 @@ class NliVerifier:
             return []
 
         # ------------------------------------------------------------
-        # Split document into factual lines
+        # Split document into factual lines with section headers
         # ------------------------------------------------------------
 
         lines = []
+        current_section = ""
 
         for raw_line in passage_text.splitlines():
             line = raw_line.strip()
 
-            if not line:
+            if not line or line.startswith("Document ID:") or line.startswith("Document Type:") or line.startswith("Last Updated:"):
                 continue
 
-            # Ignore markdown headings.
             if line.startswith("#"):
+                clean_heading = line.lstrip("#").strip()
+                if "—" in clean_heading:
+                    current_section = clean_heading.split("—")[0].strip()
+                else:
+                    current_section = clean_heading
                 continue
 
-            # Remove list marker for matching while retaining the
-            # actual factual content.
+            if not line.startswith("-") and not line.startswith("*") and ":" in line and len(line.split()) <= 5:
+                current_section = line.rstrip(":")
+                continue
+
             clean_line = re.sub(
                 r"^[-*]\s*",
                 "",
@@ -515,16 +522,25 @@ class NliVerifier:
             if not clean_line:
                 continue
 
-            lines.append(clean_line)
+            if current_section and not clean_line.lower().startswith(current_section.lower()):
+                context_line = f"{current_section}: {clean_line}"
+            else:
+                context_line = clean_line
+
+            lines.append(context_line)
+
+        # Also include raw whole passage and paragraphs as candidate units
+        paragraphs = [p.strip() for p in passage_text.split("\n\n") if p.strip() and not p.strip().startswith("#")]
+        for para in paragraphs:
+            clean_para = re.sub(r"^[-*]\s*", "", para).strip()
+            if clean_para and clean_para not in lines:
+                lines.append(clean_para)
 
         if not lines:
             return []
 
         # ------------------------------------------------------------
         # Score each line using lexical overlap.
-        #
-        # The score is only used to choose evidence units. NLI still
-        # performs the independent semantic verification.
         # ------------------------------------------------------------
 
         scored_lines: list[tuple[float, str]] = []
@@ -546,8 +562,6 @@ class NliVerifier:
             if not overlap:
                 continue
 
-            # Entity/date/number overlap is especially useful for
-            # factual verification.
             important_overlap = 0
 
             for token in overlap:
@@ -562,13 +576,17 @@ class NliVerifier:
                         "standard",
                         "launch",
                         "launched",
+                        "support",
+                        "month",
+                        "user",
+                        "workspace",
                     }
                 ):
                     important_overlap += 1
 
             score = (
                 len(overlap)
-                + (important_overlap * 1.5)
+                + (important_overlap * 2.0)
             )
 
             scored_lines.append(
@@ -576,7 +594,7 @@ class NliVerifier:
             )
 
         if not scored_lines:
-            return []
+            return [lines[0]] if lines else []
 
         # Highest lexical matches first.
         scored_lines.sort(
@@ -584,12 +602,9 @@ class NliVerifier:
             reverse=True,
         )
 
-        # Keep a small number of focused evidence units.
-        #
-        # We deliberately avoid sending the entire document to NLI.
         selected = [
             line
-            for _, line in scored_lines[:5]
+            for _, line in scored_lines[:6]
         ]
 
         return selected

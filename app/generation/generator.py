@@ -132,31 +132,98 @@ If the evidence does not contain enough information:
 Return ONLY the structured response.
 """
 
-        response = self.client.models.generate_content(
-            model=self.settings.generation_model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=DraftAnswer,
-                max_output_tokens=700,
-                temperature=0.1,
-            ),
-        )
+        # Candidate models to try in sequence if primary experiences 503/429/404
+        primary_model = self.settings.generation_model
+        fallback_models = [
+            primary_model,
+            "gemini-2.5-flash-lite",
+            "gemini-3.5-flash-lite",
+            "gemini-2.5-flash",
+            "gemini-flash-lite-latest",
+            "gemini-3.7-flash",
+        ]
+        # Deduplicate while preserving order
+        candidate_models = []
+        for m in fallback_models:
+            if m and m not in candidate_models:
+                candidate_models.append(m)
 
-        if not response.text:
+        response = None
+        last_exception = None
+
+        for model_name in candidate_models:
+            max_retries = 3
+            base_delay = 1.5
+
+            for attempt in range(max_retries):
+                try:
+                    response = self.client.models.generate_content(
+                        model=model_name,
+                        contents=prompt,
+                        config=types.GenerateContentConfig(
+                            response_mime_type="application/json",
+                            response_schema=DraftAnswer,
+                            max_output_tokens=700,
+                            temperature=0.1,
+                        ),
+                    )
+                    if response and response.text:
+                        break
+                except Exception as exc:
+                    last_exception = exc
+                    err_str = str(exc).lower()
+                    is_transient = (
+                        "503" in err_str
+                        or "unavailable" in err_str
+                        or "429" in err_str
+                        or "resource_exhausted" in err_str
+                        or "quota" in err_str
+                        or "overloaded" in err_str
+                    )
+
+                    if is_transient and attempt < max_retries - 1:
+                        import time
+                        time.sleep(base_delay * (2 ** attempt))
+                    else:
+                        # Move on to next fallback model in candidate_models
+                        break
+
+            if response and response.text:
+                break
+
+        if response is None or not response.text:
+            if last_exception:
+                raise RuntimeError(
+                    f"Gemini generation failed across candidate models: {last_exception}"
+                ) from last_exception
             raise RuntimeError(
                 "Gemini returned an empty generation response."
             )
 
+        # Robust JSON extraction
+        raw_text = response.text.strip()
+        if raw_text.startswith("```json"):
+            raw_text = raw_text.removeprefix("```json").strip()
+        if raw_text.startswith("```"):
+            raw_text = raw_text.removeprefix("```").strip()
+        if raw_text.endswith("```"):
+            raw_text = raw_text.removesuffix("```").strip()
+
         try:
-            return DraftAnswer.model_validate_json(
-                response.text
-            )
-        except Exception as exc:
-            raise RuntimeError(
-                "Gemini returned a response that could not be "
-                "validated against DraftAnswer."
-            ) from exc
+            return DraftAnswer.model_validate_json(raw_text)
+        except Exception:
+            try:
+                import json
+                parsed = json.loads(raw_text)
+                return DraftAnswer(
+                    answer=str(parsed.get("answer", "")),
+                    claims=list(parsed.get("claims", [])),
+                    abstain=bool(parsed.get("abstain", False)),
+                )
+            except Exception as exc:
+                raise RuntimeError(
+                    f"Gemini returned a response that could not be parsed: {raw_text}"
+                ) from exc
 
 
 # Backward-compatible alias.
